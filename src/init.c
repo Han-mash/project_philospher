@@ -5,7 +5,7 @@ static int alloc_arrays(t_sim *sim)
     sim->coders = malloc(sizeof(t_coder) * sim->config.nb_coders);
     if (!sim->coders)
         return (1);
-    memset(sim->coders, 0, sizeof(t_coder) * sim->config.nb_coders); // <-- AJOUT
+    memset(sim->coders, 0, sizeof(t_coder) * sim->config.nb_coders);
 
     sim->dongles = malloc(sizeof(t_dongle) * sim->config.nb_coders);
     if (!sim->dongles)
